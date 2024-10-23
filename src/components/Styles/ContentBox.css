@@ -1,0 +1,55 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.contentBox-container {
+    margin-top: 96px;
+    padding: 36px;
+    width: 90vw;
+    height: 80vh;
+    border-radius: 5px;
+    background-color: #181a1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBox-text-container {
+    width: 1200px;
+    /*background: red;*/
+}
+
+.contentBox-navigation {
+    display: flex;
+    margin-top: 10px;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #282c34;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow-container:hover {
+    background-color: #3a3f47;
+}
+
+.arrow {
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.contentBox-image-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+
+.card-slider {
+    display: flex;
+}

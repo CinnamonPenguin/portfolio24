@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700;800&display=swap');
+
+:root {
+  --primary-gradient: linear-gradient(90deg, #f00291, #5008e0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  /*background-color: #181a1c;*/
+  background-color: #333333;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+  position: fixed;
+}
+
+h1 {
+  font-size: 128px;
+  line-height: 140px;
+  font-weight: 700;
+  color: #F0F8FE;
+}
+
+.highlight-pink {
+  font-weight: 800;
+  color: #f00291;
+}
+
+.highlight-blue {
+  font-weight: 800;
+  color: #5008e0;
+}
+
+.highlight-lila {
+  font-weight: 800;
+  color: #E3B0FF;
+}
+
+
+h2 {
+  font-size: 96px;
+  line-height: 105px;
+  font-weight: 500;
+  color: #F0F8FE;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #F0F8FE;
+}
+
+h4 {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  color: #F0F8FE;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 96px;
+    line-height: 108px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h2 {
+    font-size: 72px;
+    line-height: 80px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h3 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  h4 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
   }
 }

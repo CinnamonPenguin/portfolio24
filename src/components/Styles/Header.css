@@ -1,0 +1,92 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.navbar {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Ensure the navbar stays at the top */
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease, height 0.3s ease;
+    z-index: 1000;
+    background-color: transparent; /* Start with transparent background */
+    padding: 0 !important;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+}
+
+.visible {
+    opacity: 1;
+    height: auto;
+}
+
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /*background: #f00291;*/
+}
+
+.logo {
+    margin: 0;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+
+.navbar-links a {
+    color: #F0F8FE;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 24px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-gradient);
+}
+
+.navbar-links .active {
+    font-weight: 800;
+    font-size: 24px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-button:hover {
+    background: linear-gradient(90deg, #5008e0, #f00291);
+}
+
+.logo-image {
+    width: 200px;
+}
+
+@media (max-width: 1023px) {
+    .header-container {
+        display: none;
+    }
+
+}

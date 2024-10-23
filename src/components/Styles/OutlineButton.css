@@ -1,0 +1,42 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.custom-outline-button {
+    padding: 12px 20px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    background: transparent;
+    border: 3px solid #F0F8FE;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-outline-button:hover {
+    background: linear-gradient(90deg, #5008e0, #f00291);
+}
+
+.outline-button-text {
+    /*width: 144px;*/
+    text-align: center;
+    margin: 0 16px;
+}
+
+.outline-button-circle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #F0F8FE;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.custom-outline-button:hover .outline-button-circle {
+    background: #F0F8FE;
+    transition: background 0.3s ease;
+}

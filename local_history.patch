@@ -1,0 +1,48 @@
+Index: src/components/pages/Home.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pages/Home.js b/src/components/pages/Home.js
+--- a/src/components/pages/Home.js	
++++ b/src/components/pages/Home.js	(date 1728897046249)
+@@ -1,36 +1,18 @@
+ import React from 'react';
+ import '../Styles/Home.css'
+-import Button from "../Components/Button";
+-import heroImageOne from "../../Assets/Images/FotoWebsite.png";
++import HomeContainer from "../Components/HomeContainer"; // Adjust the path as necessary
+ import QuotesCarousel from "../Components/QuotesCarousel";
+ import Skillset from "../Components/Skillset";
+ 
+ function Home() {
+     return (
+         <div className="home-page">
+-            <div className="home-container">
+-                <div>
+-                    <h1>Creative. Coder. Curious.</h1>
+-                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+-                    <div className="button-container">
+-                        <Button text="Over mij" link="/about"/>
+-                    </div>
+-                </div>
+-                <div>
+-                    <div className="hero-image-container">
+-                        <img src={heroImageOne} alt="Description of Image 1" className="heroImage"/>
+-                    </div>
+-                </div>
+-            </div>
+-
+-            <QuotesCarousel/>
+-
++            <HomeContainer />
++            <QuotesCarousel />
+             <Skillset />
+         </div>
+-    )
+-        ;
++    );
+ }
+ 
+ export default Home;

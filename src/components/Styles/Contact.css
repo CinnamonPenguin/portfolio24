@@ -1,0 +1,41 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.contact-container {
+    padding: 20px;
+    /*border-radius: 8px;*/
+    margin: 32px;
+}
+
+.contact-box {
+    padding: 10px;
+    height: 64px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 4px;
+    font-size: 16px;
+    background: #3C3E40;
+    border: none;
+    color: #F0F8FE;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: #3C3E40;
+    color: #F0F8FE;
+    border: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #F0F8FE;
+}
+
+/*.button-container {*/
+/*    justify-content: right;*/
+/*}*/

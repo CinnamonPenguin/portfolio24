@@ -1,0 +1,25 @@
+/*!*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*!*/
+.bumper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0;
+}
+
+.bumper-container {
+    display: flex;
+    width: 90vw;
+    /*background: #181a1c;*/
+}
+
+.bumper-text {
+    width: 40%;
+    text-align: center;
+    align-content: center;
+}
+
+.bumper-contact-container {
+    width: 60%;
+    background: rgba(240, 2, 145, 0.3);
+    border-radius: 15px;
+}

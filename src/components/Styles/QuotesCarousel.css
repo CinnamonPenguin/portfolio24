@@ -1,0 +1,39 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.quotes-container {
+    width: 100vw;
+    padding: 30px;
+    background: rgba(24, 26, 28, 0.5);
+}
+
+.quote-wrapper {
+    width: 80vw;
+    height: 40vh;
+}
+
+.quotes-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .quotes-carousel {
+        min-height: 40vh;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .quotes-container {
+        padding: 10px;
+    }
+
+    .quotes-carousel {
+        min-height: 40vh;
+        padding: 10px;
+    }
+
+}

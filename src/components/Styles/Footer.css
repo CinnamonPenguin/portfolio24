@@ -1,0 +1,43 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-item {
+    padding: 20px;
+}
+
+.left-item {
+    border-right: 2px solid white;
+    margin-top: 16px;
+}
+
+.footer-item-text {
+    margin: 16px 0 64px;
+}
+
+
+.footer-item h3 {
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.middle-item {
+    text-align: center;
+}

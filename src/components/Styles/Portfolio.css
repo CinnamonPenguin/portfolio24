@@ -1,0 +1,61 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+.portfolio-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portfolio-container {
+    margin-top: 96px;
+    padding: 24px;
+    width: 90vw;
+    height: 80vh;
+    /*border-radius: 5px;*/
+    background-color: #181a1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-text-container {
+    width: 1200px;
+}
+
+.portfolio-navigation {
+    display: flex;
+    margin-top: 10px;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #282c34;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow-container:hover {
+    background-color: #3a3f47;
+}
+
+.arrow {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.portfolio-image-container {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+}
+
+.card-slider {
+    display: flex;
+}

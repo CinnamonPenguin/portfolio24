@@ -1,0 +1,43 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+
+.custom-button {
+    padding: 16px 24px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #f00291, #5008e0);
+    border: none;
+    /*border-radius: 4px;*/
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(90deg, #5008e0, #f00291); /* Optional: reverse gradient */
+}
+
+.button-text {
+    width: 144px;
+    text-align: center;
+}
+
+.button-circle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #F0F8FE;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.custom-button:hover .button-circle {
+    background: #F0F8FE;
+    transition: background 0.3s ease;
+}

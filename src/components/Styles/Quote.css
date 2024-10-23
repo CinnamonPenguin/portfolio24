@@ -1,0 +1,72 @@
+/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
+/*.quote-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 1200px;*/
+/*    height: 600px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.quote {*/
+/*    text-align: center;*/
+/*    position: relative;*/
+/*}*/
+
+/* quote.css */
+/* quote.css */
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Change to 100% for responsive design */
+    height: 200px; /* Set a fixed height to prevent jumping */
+    max-width: 1200px; /* Optional max width */
+    margin: 0 auto;
+}
+
+.quote {
+    text-align: center;
+    position: relative;
+    font-size: 24px; /* Base font size for readability */
+}
+
+/* Adjusting the quotes carousel */
+.quotes-container {
+    width: 100vw;
+    padding: 20px; /* Adjusted for less whitespace */
+    background: rgba(24, 26, 28, 0.5);
+}
+
+.quotes-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; /* Match this with the .quote-container height */
+    padding: 10px; /* Adjusted for less whitespace */
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .quotes-carousel {
+        min-height: 200px; /* Consistent height for tablet */
+        padding: 15px; /* Moderate padding for tablets */
+    }
+}
+
+@media (max-width: 767px) {
+    .quotes-container {
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .quotes-carousel {
+        min-height: 200px; /* Consistent height for mobile */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .quote {
+        font-size: 24px; /* Keep font size the same for mobile */
+        line-height: 1.5; /* Adjust line height for readability */
+    }
+}
+
