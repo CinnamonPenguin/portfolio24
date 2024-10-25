@@ -25,7 +25,6 @@
 
 .grid-item {
     padding: 20px;
-    background-color: rgba(24, 26, 28, 0.5);
     color: #f0f8fe;
     border-radius: 8px;
 }
@@ -87,7 +86,3 @@ h2 {
     margin-bottom: 10px;
 }
 
-.timeline-content p {
-    margin: 0;
-    font-size: 14px;
-}

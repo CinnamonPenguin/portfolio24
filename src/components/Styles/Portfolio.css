@@ -1,61 +1,149 @@
-/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
-.portfolio-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+/*.portfolio-wrapper {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*}*/
 
-.portfolio-container {
-    margin-top: 96px;
-    padding: 24px;
-    width: 90vw;
-    height: 80vh;
-    /*border-radius: 5px;*/
-    background-color: #181a1c;
+/*.portfolio-container {*/
+/*    margin-top: 96px;*/
+/*    padding: 24px;*/
+/*    width: 90vw;*/
+/*    height: 80vh;*/
+/*    !*border-radius: 5px;*!*/
+/*    background-color: #181a1c;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.portfolio-text-container {*/
+/*    width: 1200px;*/
+/*}*/
+
+/*.portfolio-navigation {*/
+/*    display: flex;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.arrow-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 48px;*/
+/*    height: 48px;*/
+/*    border-radius: 50%;*/
+/*    margin-right: 20px;*/
+/*    background-color: #282c34;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s;*/
+/*}*/
+
+/*.arrow-container:hover {*/
+/*    background-color: #3a3f47;*/
+/*}*/
+
+/*.arrow {*/
+/*    font-size: 36px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.portfolio-image-container {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    overflow-x: auto;*/
+/*    display: flex;*/
+/*}*/
+
+/*.card-slider {*/
+/*    display: flex;*/
+/*}*/
+
+.gallery-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 .portfolio-text-container {
-    width: 1200px;
+    text-align: center;
+    margin: 32px 0;
 }
 
-.portfolio-navigation {
-    display: flex;
-    margin-top: 10px;
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 32px;
+    max-width: 100%;
 }
 
-.arrow-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin-right: 20px;
-    background-color: #282c34;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-.arrow-container:hover {
-    background-color: #3a3f47;
+.gallery-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
-.arrow {
-    font-size: 36px;
-    cursor: pointer;
-}
-
-.portfolio-image-container {
+.image-overlay {
+    position: relative;
     width: 100%;
     height: 100%;
-    overflow-x: auto;
-    display: flex;
 }
 
-.card-slider {
-    display: flex;
+.image-overlay:hover .gallery-image {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+.image-overlay:hover .image-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover::before {
+    opacity: 1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
 }

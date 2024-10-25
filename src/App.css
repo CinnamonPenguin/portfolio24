@@ -1,4 +1,3 @@
-/*Oude code, 22-10 voordat mobile/tablet view toegevoegd werden. Bewaren tot alles 100% werkt.*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700;800&display=swap');
 
 :root {
@@ -66,12 +65,19 @@ h5 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 800;
+  color: #F0F8FE;
 }
 
 p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   font-weight: 400;
+  color: #F0F8FE;
+}
+
+a {
+  font-size: 20px;
+  color: #F0F8FE;
 }
 
 @media (max-width: 767px) {
@@ -98,5 +104,9 @@ p {
   p {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  a {
+    font-size: 16px;
   }
 }

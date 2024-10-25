@@ -2,22 +2,10 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    overflow-y: hidden;
 }
 
-.blob {
-    height: 34vmax;
-    aspect-ratio: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    border-radius: 50%;
-    background: linear-gradient(to right, #5008e0, #f00291);
-    animation: rotate 20s infinite;
-    opacity: 0.8;
-    filter: blur(12vmax);
-    z-index: -1;
+* {
+    color: #F0F8FE;
 }
 
 @keyframes rotate {
@@ -34,20 +22,17 @@
     }
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
-    .blob {
-        height: 40vmax;
-        filter: blur(10vmax);
-    }
-}
-
-@media (max-width: 767px) {
-    .blob {
-        height: 50vmax;
-        filter: blur(8vmax);
-    }
-
-    .home-page {
-        overflow-y: auto;
-    }
+.blob {
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #5008e0, #f00291);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    filter: blur(12vmax);
+    z-index: -1;
 }

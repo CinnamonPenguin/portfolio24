@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/Contact.css';
 import Button from "./Button";
+import OutlineButton from "./OutlineButton";
 
 const ContactForm = () => {
     return (
@@ -32,7 +33,7 @@ const ContactForm = () => {
                     <textarea className="form-control" rows="5" placeholder="Your Message" required></textarea>
                 </div>
                 <div className="button-container">
-                    <Button text="submit" />
+                    <OutlineButton text="submit" />
                 </div>
             </form>
         </div>
