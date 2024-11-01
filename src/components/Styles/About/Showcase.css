@@ -1,0 +1,31 @@
+/* Wrapper takes up 100% width */
+.showcase-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: red;
+}
+
+/* Container is centered and constrained to max 80vw */
+.showcase-container {
+    max-width: 80vw;
+    width: 100%;
+    text-align: center;
+    background: blue;
+}
+
+/* Content area with two divs next to each other */
+.showcase-content {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+/* Left and Right boxes each take up 100% of available space in .showcase-content */
+.showcase-box-left {
+    background: pink;
+}
+
+.showcase-box-right {
+    background: yellow;
+}

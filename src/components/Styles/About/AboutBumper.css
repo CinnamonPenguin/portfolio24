@@ -1,0 +1,63 @@
+.aboutBumper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    background: #0B0410;
+}
+
+.aboutBumper-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    padding: 0 16px;
+}
+
+.aboutBumper-text {
+    text-align: left;
+    width: 100%;
+}
+
+.aboutBumper-text h5,
+.aboutBumper-text h2 {
+    margin-bottom: 16px;
+}
+
+.aboutBumper-text h2 {
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 140px;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end; /* Push button to the right */
+    margin-top: 24px;
+}
+
+button {
+    padding: 8px 16px; /* Adjust button padding if needed */
+}
+
+/* Responsive Styling */
+@media (max-width: 1023px) {
+    .aboutBumper-container {
+        align-items: center;
+    }
+
+    .aboutBumper-text h5,
+    .aboutBumper-text h2 {
+        text-align: center;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /*.aboutBumper-text h2 {*/
+    /*    font-size: 64px; !* Smaller font size for mobile *!*/
+    /*}*/
+}

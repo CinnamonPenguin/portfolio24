@@ -1,0 +1,62 @@
+.numbers-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    /*background: #0B0410;*/
+    /*background: red;*/
+}
+
+.numbers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 70vw;
+    /*background: blue;*/
+}
+
+.numbers-text {
+    /*background: yellow;*/
+    text-align: left;
+    display: flex;
+    max-width: 20vw;
+}
+
+.numbers-number {
+    height: 100%;
+    /*background: red;*/
+}
+
+.numbers-text:nth-child(2) {
+    /*background: green;*/
+    text-align: left;
+}
+
+.numbers-text h3 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 96px;
+}
+
+.numbers-description p {
+    margin: 0 0 0 8px;
+}
+/* Responsive Styling */
+@media (max-width: 1023px) {
+    .numbers-container {
+        align-items: center;
+    }
+
+    .numbers-text h5,
+    .numbers-text h2 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /*.numbers-text h2 {*/
+    /*    font-size: 64px; !* Smaller font size for mobile *!*/
+    /*}*/
+}

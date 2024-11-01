@@ -1,0 +1,41 @@
+.header-desktop {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: transform 0.4s ease-in-out;
+}
+
+.header-desktop.hidden {
+    transform: translateY(-100%);
+}
+
+.header-desktop.visible {
+    transform: translateY(0);
+}
+
+.header-desktop-container {
+    max-width: 80vw;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-desktop {
+    width: 200px;
+}
+
+/* Hide the header on mobile view */
+@media (max-width: 768px) {
+    .header-desktop {
+        display: none;
+    }
+}

@@ -1,0 +1,125 @@
+.about-book-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: red;
+}
+
+.about-resume h2 {
+    text-align: center; /* Center the text */
+    margin: 32px auto; /* Optional: ensure auto margin for centering */
+}
+
+.about-book-grid-item {
+    /*padding: 20px;*/
+    color: #f0f8fe;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin: 16px;*/
+    background: green;
+}
+
+.about-book-grid-item h3 {
+    margin-bottom: 16px;
+}
+
+
+.book {
+    --rotation: 18deg;
+    width: var(--width);
+    height: var(--height);
+    transform: rotate3d(0, 1, 0, var(--rotation)) translateZ(-50px) scale(var(--scale));
+    transform-origin: center center;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    position: relative;
+}
+
+.book-scene {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: var(--flexDirection);
+    flex: 0 1 80%;
+}
+
+.book-container {
+    perspective: 900px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background: yellow;
+}
+
+.book:hover {
+    --rotation: 30deg;
+}
+
+.book:active {
+    --rotation: 20deg;
+    --scale: 0.78;
+}
+
+.book:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+    height: 60px;
+    width: 100%;
+    background: rgb(0 0 0 / 55%);
+    border-radius: 0;
+    filter: blur(40px);
+    z-index: -1;
+    transform: translate3d(-34px, 0, -40px);
+}
+
+.spine {
+    position: absolute;
+    width: 60px; /* Set the width for the spine */
+    height: 100%; /* Match the height of the book */
+    top: 0; /* Align it to the top */
+    transform: rotateY(-75deg) translateZ(30px);
+    overflow: hidden; /* Prevent overflow of the image */
+}
+
+.spine-image {
+    width: 100%; /* Ensure the spine image fills the spine div */
+    height: 100%; /* Ensure the spine image fills the spine div */
+    object-fit: contain; /* Maintain aspect ratio and fit within the div */
+    object-position: center; /* Center the image within the div */
+}
+
+
+.book .cover {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(30px);
+}
+
+.cover-image {
+    height: 100%;
+}
+
+@media (min-width: 780px) {
+    .book {
+        --width: 300px;
+        --height: 400px;
+        --fontSize: 1.8em;
+        --scale: 1;
+    }
+
+    .book:active {
+        --scale: 0.95;
+    }
+}

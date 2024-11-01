@@ -1,0 +1,65 @@
+/*Roundness One*/
+#wrapper[data-roundness="1"] > .shape:nth-child(1) {
+    border-radius: 0;
+}
+
+#wrapper[data-roundness="1"] > .shape:nth-child(2) {
+    border-radius: 0;
+}
+
+#wrapper[data-roundness="1"] > .shape:nth-child(3) {
+    border-radius: 0;
+}
+
+#wrapper[data-roundness="1"] > .shape:nth-child(4) {
+    border-radius: 0;
+}
+
+#wrapper[data-roundness="1"] > .shape:nth-child(5) {
+    border-radius: 0;
+}
+
+
+/*Roundness Two*/
+#wrapper[data-roundness="2"] > .shape:nth-child(1) {
+    border-radius: 2rem;
+}
+
+#wrapper[data-roundness="2"] > .shape:nth-child(2) {
+    border-radius: 2rem;
+}
+
+#wrapper[data-roundness="2"] > .shape:nth-child(3) {
+    border-radius: 2rem;
+}
+
+#wrapper[data-roundness="2"] > .shape:nth-child(4) {
+    border-radius: 2rem;
+}
+
+#wrapper[data-roundness="2"] > .shape:nth-child(5) {
+    border-radius: 2rem;
+}
+
+
+/*Roundness Three*/
+
+#wrapper[data-roundness="3"] > .shape:nth-child(1) {
+    border-radius: 50%;
+}
+
+#wrapper[data-roundness="3"] > .shape:nth-child(2) {
+    border-radius: 50%;
+}
+
+#wrapper[data-roundness="3"] > .shape:nth-child(3) {
+    border-radius: 50%;
+}
+
+#wrapper[data-roundness="3"] > .shape:nth-child(4) {
+    border-radius: 50%;
+}
+
+#wrapper[data-roundness="3"] > .shape:nth-child(5) {
+    border-radius: 50%;
+}

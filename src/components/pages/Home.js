@@ -67,25 +67,25 @@ import Footer from "./Footer";
 
 function Home() {
 
-    useEffect(() => {
-        const blob = document.getElementsByClassName("blob")[0];
-
-        const handlePointerMove = event => {
-            const { pageX, pageY } = event; // Use pageX and pageY to track movement relative to the whole document
-
-            blob.animate({
-                left: `${pageX}px`,
-                top: `${pageY}px`
-            }, { duration: 3000, fill: "forwards" });
-        };
-
-        window.addEventListener("pointermove", handlePointerMove);
-
-        // Cleanup function to remove the event listener when the component unmounts
-        return () => {
-            window.removeEventListener("pointermove", handlePointerMove);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const blob = document.getElementsByClassName("blob")[0];
+    //
+    //     const handlePointerMove = event => {
+    //         const { pageX, pageY } = event; // Use pageX and pageY to track movement relative to the whole document
+    //
+    //         blob.animate({
+    //             left: `${pageX}px`,
+    //             top: `${pageY}px`
+    //         }, { duration: 3000, fill: "forwards" });
+    //     };
+    //
+    //     window.addEventListener("pointermove", handlePointerMove);
+    //
+    //     // Cleanup function to remove the event listener when the component unmounts
+    //     return () => {
+    //         window.removeEventListener("pointermove", handlePointerMove);
+    //     };
+    // }, []);
 
     return (
         <div className="home-page">
@@ -96,7 +96,7 @@ function Home() {
             <Portfolio />
             <Bumper />
             {/*<Contact />*/}
-            <div className="blob"></div>
+            {/*<div className="blob"></div>*/}
             <Footer />
         </div>
     );

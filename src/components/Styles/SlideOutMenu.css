@@ -1,0 +1,78 @@
+/* Single menu-content handling both hexagon and the menu */
+.menu-content {
+    position: fixed;
+    right: -288px; /* Initially hidden outside the screen */
+    top: 0;
+    width: 336px; /* Set the open width to 288px */
+    height: 100vh;
+    background: linear-gradient(0deg, #F00291, #5008E0, #F00291); /* Gradient background */
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-content.open {
+    right: 0; /* When the menu is open, bring it to view */
+}
+
+.menu-content .hexagon {
+    width: 80px;
+    height: 80px;
+    background: #f0f0f0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+    left: -40px; /* Keep hexagon outside the left edge */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Style for the links */
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-content ul li {
+    margin: 20px 0;
+}
+
+.menu-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.hamburger-menu-desktop {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*transform: translateY(25%);*/
+    transform: translate(30%, 30%);
+}
+
+.hamburger-menu-desktop .bar {
+    width: 80%;
+    height: 4px;
+    background-color: black;
+}
+
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .menu-content {
+        width: 100%;
+        display: none;
+    }
+
+    .menu-content .hexagon {
+        display: none;
+    }
+}

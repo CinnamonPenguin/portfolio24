@@ -10,6 +10,7 @@ import {faBehance, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-br
 function Footer() {
     return (
         <footer className="footer">
+
             <div className="footer-container">
                 <div className="footer-item left-item">
                     <img src={logo} alt="Description of Image 1" className="logo-image"/>
