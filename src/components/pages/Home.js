@@ -54,8 +54,8 @@
 //
 
 import React, { useEffect } from 'react';
-import '../Styles/Home.css';
 import '../../App.css'
+import '../Styles/Home.css';
 import HomeContainer from "../Components/HomeContainer";
 import QuotesCarousel from "../Components/QuotesCarousel";
 import Skillset from "../Components/Skillset";
@@ -64,6 +64,7 @@ import Portfolio from "../Components/Portfolio";
 import Contact from "../Components/Contact";
 import Bumper from "../Components/Bumper";
 import Footer from "./Footer";
+
 
 function Home() {
 
@@ -97,7 +98,7 @@ function Home() {
             <Bumper />
             {/*<Contact />*/}
             {/*<div className="blob"></div>*/}
-            <Footer />
+            {/*<Footer />*/}
         </div>
     );
 }

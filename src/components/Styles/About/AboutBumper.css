@@ -11,6 +11,7 @@
     flex-direction: column;
     max-width: 70vw;
     padding: 0 16px;
+    margin: 32px 0;
 }
 
 .aboutBumper-text {
@@ -32,12 +33,12 @@
 .button-container {
     display: flex;
     width: 100%;
-    justify-content: flex-end; /* Push button to the right */
+    justify-content: flex-end;
     margin-top: 24px;
 }
 
 button {
-    padding: 8px 16px; /* Adjust button padding if needed */
+    padding: 8px 16px;
 }
 
 /* Responsive Styling */
@@ -58,6 +59,6 @@ button {
 
 @media (max-width: 768px) {
     /*.aboutBumper-text h2 {*/
-    /*    font-size: 64px; !* Smaller font size for mobile *!*/
+    /*    font-size: 64px; */
     /*}*/
 }

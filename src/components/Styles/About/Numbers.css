@@ -13,6 +13,7 @@
     justify-content: space-evenly;
     width: 100%;
     max-width: 70vw;
+    margin: 32px 0;
     /*background: blue;*/
 }
 
@@ -56,7 +57,5 @@
 }
 
 @media (max-width: 768px) {
-    /*.numbers-text h2 {*/
-    /*    font-size: 64px; !* Smaller font size for mobile *!*/
-    /*}*/
+
 }

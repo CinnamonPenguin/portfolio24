@@ -10,6 +10,7 @@ import Numbers from "../Components/About/Numbers";
 import BannerWithBook from "../Components/About/BannerWithBook";
 import BookShowcase from "../Components/About/BookShowcase";
 import Showcase from "../Components/About/Showcase";
+import AboutBumper2 from "../Components/About/AboutBumper2";
 
 
 function About() {
@@ -26,17 +27,18 @@ function About() {
 
     return (
         <div className="about-page">
-            <AboutTopSegment/>
+            {/*<AboutTopSegment/>*/}
             <Timeline/>
             <Hobbies />
             <Numbers />
-            <AboutBumper />
+            {/*<AboutBumper />*/}
+            <AboutBumper2 />
             <Experience />
 
             {/*<BannerWithBook />*/}
             <BookShowcase />
-            <Showcase />
-            <div className="blob"></div>
+            {/*<Showcase />*/}
+            {/*<div className="blob"></div>*/}
         </div>
     )
         ;

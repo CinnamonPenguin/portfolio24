@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.portfolio-container {
+    margin-top: 32px;
+}
+
+.portfolio-container a {
+    max-width: 25%;
+    height: 25%;
+}
+
+.portfolio-container > a > img {
+    max-width: 100%;
+    aspect-ratio: 1;
+}
+
+
+@media(min-width: 35rem) {
+    .portfolio-container {
+        padding-top: 4rem;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-container a {
+        max-width: 25%;
+        height: 25%;
+    }
+}

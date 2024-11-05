@@ -28,7 +28,7 @@ function Header() {
     return (
         <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="header-container">
-                <img src={logo} alt="Description of Image 1" className="logo-image"/>
+                <img src={logo} alt="Logo image" className="logo-image"><NavLink to="/home"></NavLink></img>
                 <nav className="navbar-container">
                     <ul className="navbar-links">
                         <li><NavLink to="/">Home</NavLink></li>
