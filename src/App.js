@@ -9,17 +9,17 @@ import Contact from "./components/pages/Contact";
 import Funhouse from "./components/pages/Funhouse";
 
 import './App.css?v=1'
-import SlideOutMenu from "./components/Components/SlideOutMenu";
+import SlideOutMenu from "./components/Components/Home/SlideOutMenu";
 import HeaderDesktop from "./components/pages/HeaderDesktop";
 import HeaderMobile from "./components/pages/HeaderMobile";
 import BlobMouse from "./components/Components/BlobMouse";
 import Footer from "./components/pages/Footer";
+import Binding from "./components/Components/Funhouse/Binding/Binding"
 
 function App() {
     return (
         <Router>
             <SlideOutMenu/>
-            {/*<Header/>*/}
             <HeaderDesktop/>
             <HeaderMobile/>
 
@@ -30,6 +30,7 @@ function App() {
                     <Route path="/creative" element={<Creative/>}/>
                     <Route path="/coder" element={<Coder/>}/>
                     <Route path="/funhouse" element={<Funhouse/>}/>
+                    <Route path="/funhouse/binding" element={<Binding/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
             </div>

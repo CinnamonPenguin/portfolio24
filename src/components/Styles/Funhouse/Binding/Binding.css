@@ -1,0 +1,47 @@
+.binding-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: red;
+    height: 100vh;
+}
+
+.start-screen, .gameover-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+button {
+    color: #0B0410;
+}
+
+.game-container {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #282c34;
+}
+
+
+.start-screen button, .gameover-screen button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+    .binding-container .konva-container {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}

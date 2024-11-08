@@ -4,8 +4,6 @@ import Contact from "./Contact";
 
 
 const Bumper = () => {
-
-
     return (
         <div className="bumper-wrapper">
             <div className="bumper-container">

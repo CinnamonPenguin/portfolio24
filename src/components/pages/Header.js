@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../Styles/Header.css';
 import { Link, NavLink } from "react-router-dom";
-import Button from "../Components/Button";
 import logo from "../../Assets/Images/Title-04.svg";
 import OutlineButton from "../Components/OutlineButton";
 

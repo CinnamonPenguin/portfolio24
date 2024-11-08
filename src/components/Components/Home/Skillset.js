@@ -1,9 +1,9 @@
 import React from 'react';
-import '../Styles/Skillset.css';
-import { ReactComponent as CodeSkill } from '../../Assets/Images/code-skill.svg';
-import { ReactComponent as DesignSkill } from '../../Assets/Images/design-skill.svg';
-import { ReactComponent as ManagementSkill } from '../../Assets/Images/management-skill.svg';
-import OutlineButton from "./OutlineButton";
+import '../../Styles/Skillset.css';
+import { ReactComponent as CodeSkill } from '../../../Assets/Images/code-skill.svg';
+import { ReactComponent as DesignSkill } from '../../../Assets/Images/design-skill.svg';
+import { ReactComponent as ManagementSkill } from '../../../Assets/Images/management-skill.svg';
+import OutlineButton from "../OutlineButton";
 
 const Skillset = () => {
     return (

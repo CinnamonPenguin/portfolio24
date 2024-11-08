@@ -104,11 +104,11 @@
 
 
 import React from 'react';
-import '../Styles/Portfolio.css';
-import ImageOne from '../../Assets/Images/01.png'
-import ImageTwo from '../../Assets/Images/02.png'
-import ImageThree from '../../Assets/Images/03.png'
-import ImageFour from '../../Assets/Images/04.png'
+import '../../Styles/Portfolio.css';
+import ImageOne from '../../../Assets/Images/01.png'
+import ImageTwo from '../../../Assets/Images/02.png'
+import ImageThree from '../../../Assets/Images/03.png'
+import ImageFour from '../../../Assets/Images/04.png'
 
 const images = [
     {

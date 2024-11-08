@@ -7,7 +7,6 @@
 
 .bumper-container {
     display: flex;
-    /*width: 90vw;*/
     width: 80vw;
     gap: 32px;
 }

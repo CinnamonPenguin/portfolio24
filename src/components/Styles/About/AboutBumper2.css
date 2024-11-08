@@ -41,12 +41,10 @@
     animation-duration: 2s;
 }
 
-/* Styling for spaces to prevent animation */
 .animated-char.space {
     animation: none;
 }
 
-/* Keyframes for wave animation */
 @keyframes wave {
     0%, 100% {
         transform: scale(1);
@@ -59,7 +57,6 @@
     }
 }
 
-/* Responsive Styling */
 @media (max-width: 1023px) {
     .aboutBumper-container {
         align-items: center;

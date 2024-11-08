@@ -1,5 +1,4 @@
 .about-book-container {
-    /*max-width: 1200px;*/
     max-width: 80vw;
     margin: 0 auto;
     text-align: center;
@@ -78,11 +77,11 @@
 
 .spine {
     position: absolute;
-    width: 60px; /* Set the width for the spine */
-    height: 100%; /* Match the height of the book */
-    top: 0; /* Align it to the top */
+    width: 60px;
+    height: 100%;
+    top: 0;
     transform: rotateY(-75deg) translateZ(30px);
-    overflow: hidden; /* Prevent overflow of the image */
+    overflow: hidden;
 }
 
 .spine-image {
@@ -121,7 +120,7 @@
 
 @media (max-width: 780px) {
     .about-book-container {
-        grid-template-columns: 1fr; /* Stack vertically */
+        grid-template-columns: 1fr;
     }
 }
 

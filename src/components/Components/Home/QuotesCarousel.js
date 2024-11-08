@@ -39,7 +39,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Quote from './Quote';
-import '../Styles/QuotesCarousel.css';
+import '../../Styles/QuotesCarousel.css';
 
 const quotes = [
     { text: ["Less is more, and <span class='highlight-blue'>more is more.</span>", "It's the middle that's no good"], author: " - Paula Scher" },

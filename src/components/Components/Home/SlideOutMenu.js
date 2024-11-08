@@ -35,7 +35,7 @@
 // export default SlideOutMenu;
 
 import React, { useState } from 'react';
-import '../Styles/SlideOutMenu.css'; // Make sure to style this properly
+import '../../Styles/SlideOutMenu.css'; // Make sure to style this properly
 
 function SlideOutMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -57,7 +57,7 @@ function SlideOutMenu() {
                     {/* You can add your SVG or image for the hexagon here */}
                 </div>
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/public">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/creative">Creative</a></li>
                     <li><a href="/coder">Coder</a></li>

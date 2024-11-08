@@ -1,15 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import '../Styles/About.css';
-import Timeline from "../Components/Timeline";
+import Timeline from "../Components/About/Timeline";
 import AboutTopSegment from "../Components/AboutTopSegment";
 import '../Styles/Home.css'
 import Hobbies from "../Components/About/Hobbies";
 import Experience from "../Components/About/Experience";
-import AboutBumper from "../Components/About/AboutBumper";
 import Numbers from "../Components/About/Numbers";
-import BannerWithBook from "../Components/About/BannerWithBook";
 import BookShowcase from "../Components/About/BookShowcase";
-import Showcase from "../Components/About/Showcase";
 import AboutBumper2 from "../Components/About/AboutBumper2";
 
 
@@ -31,14 +28,9 @@ function About() {
             <Timeline/>
             <Hobbies />
             <Numbers />
-            {/*<AboutBumper />*/}
             <AboutBumper2 />
             <Experience />
-
-            {/*<BannerWithBook />*/}
             <BookShowcase />
-            {/*<Showcase />*/}
-            {/*<div className="blob"></div>*/}
         </div>
     )
         ;

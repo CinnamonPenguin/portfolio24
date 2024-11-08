@@ -56,7 +56,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import '../Styles/Quote.css';
+import '../../Styles/Quote.css';
 
 const Quote = ({ text, author }) => {
     const quoteRef = useRef(null);
